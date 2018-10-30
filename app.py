@@ -70,8 +70,8 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_text_message(event):
     question = event.message.text
-    if(question == 'Hai'):
-        line_bot_api.reply_message(event.reply_token, TextSendMessage(text='Halo'))
+    if(question == 'Zulfa cantik'):
+        line_bot_api.reply_message(event.reply_token, TextSendMessage(text='Zulfa Jelek'))
     else:
         answer = request_api(question)
         line_bot_api.reply_message(event.reply_token, TextSendMessage(text=answer))
