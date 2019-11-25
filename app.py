@@ -40,8 +40,8 @@ handler = WebhookHandler('f65284d00ed7ae93137d2758e1355fa1')
 static_tmp_path = os.path.join(os.path.dirname(__file__), 'static', 'tmp')
 
 # change this variable with your server API 
-api_url = "http://35.229.124.57"
-api_port = ":5000"
+api_url = "http://52.221.180.165"
+api_port = ":3000"
 api_route = "/predict"
 
 @app.route("/test", methods=['GET'])
